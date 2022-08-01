@@ -29,6 +29,7 @@ p {
     display: flex;
     justify-content: space-between;
     margin: 20px 50px;
+    position: relative;
 }
 
 .nav {
@@ -52,6 +53,44 @@ p {
 
 .nav button:hover {
     color: var(--almostBlack);
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    left: 7%;
+    padding: 0 20px;
+    position: absolute;
+    top: 120%;
+}
+
+.features p {
+    align-items: center;
+    display: flex;
+    font-size: 13px;
+    margin: 10px 5px;
+}
+
+.features span {
+    padding-left: 10px;
+}
+
+.company {
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    left: 21%;
+    padding: 10px 20px;
+    position: absolute;
+    top: 120%;
+}
+
+.company p {
+    font-size: 13px;
+    padding: 10px 0;
 }
 
 .authentication button {
@@ -84,14 +123,14 @@ p {
     display: flex;
     flex-direction: column;
     margin-left: 190px;
-    margin-top: 180px;
+    margin-top: 150px;
     max-width: 50%;
     max-height: 70vh;
 }
 
 .hero .hero__info h1 {
     margin-bottom: 30px;
-    font-size: 80px;
+    font-size: 75px;
     font-weight: 700;
 }
 
@@ -111,7 +150,7 @@ p {
     color: var(--almostWhite);
     cursor: pointer;
     font-size: 16px;
-    margin-top: 60px;
+    margin-top: 50px;
     padding: 15px 30px;
     transition: 0.3s;
     text-align: left;
@@ -123,13 +162,13 @@ p {
 }
 
 .hero .hero__info .client img {
-    margin: 110px 0 80px 0;
-    padding-right: 40px;
+    margin: 130px 0 80px 0;
+    padding-right: 26px;
 }
 
 .hero .hero__image {
     margin-right: 150px;
-    margin-top: 60px;
+    margin-top: 30px;
     max-width: 50%;
     max-height: 70vh;
 }
