@@ -2,8 +2,6 @@
     --almostWhite: hsl(0, 0%, 98%);
     --mediumGray: hsl(0, 0%, 41%);
     --almostBlack: hsl(0, 0%, 8%);
-    --mobile: 375px;
-    --desktop: 1440px;
 }
 
 * {
@@ -17,7 +15,7 @@ body {
     font-family: 'Epilogue', sans-serif;
     margin: 0 auto;
     max-height: 100vh;
-    max-width: var(--desktop);
+    max-width: 1440px;
 }
 
 p {
@@ -32,11 +30,16 @@ p {
     position: relative;
 }
 
-.nav {
-    display: flex;
+.navigation .mobile-nav {
+    display: none;
 }
 
-.nav .logo {
+.nav {
+    display: flex;
+
+}
+
+.logo {
     margin-top: 12px;
     margin-right: 40px;
 }
@@ -95,6 +98,10 @@ p {
 .company-nav p {
     font-size: 13px;
     padding: 10px 0;
+}
+
+.authentication {
+    margin-left: 605px;
 }
 
 
@@ -178,6 +185,10 @@ p {
     max-height: 70vh;
 }
 
+.hero .hero__image #img-mobile {
+    display: none;
+}
+
 .hero .hero__image img {
     width: 100%;
     height: 100%;
@@ -186,4 +197,110 @@ p {
 .visible {
     opacity: 1;
     top: 120%;
+}
+
+@media screen and (max-width: 375px) {
+    .navigation .mobile-nav {
+        display: block;
+        margin: 10px -30px 0 0
+    }
+
+    .nav {
+        align-items: flex-start;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        font-size: 40px;
+        height: 100vh;
+        opacity: 0;
+        padding: 100px 10px;
+        position: fixed;
+        top: 0;
+        transform: translate(150%);
+        right: 0;
+        width: 70%;
+        z-index: -1;
+        transition: transform 0.3s;
+    }
+
+    .authentication {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding-top: 20px;
+        font-size: 40px;
+    }
+
+    .logo {
+        margin-left: -30px;
+    }
+
+    #img-desktop {
+        display: none;
+    }
+
+    .hero .hero__image #img-mobile {
+        display: block;
+        height: 40vh;
+        left: 0;
+        position: absolute;
+        top: 10%;
+        width: 100%;
+    }
+
+    .hero .hero__info {
+        margin: 150px -150px 0 0;
+        max-width: 100%;
+    }
+
+    .hero .hero__info h1 {
+        margin: 150px 0 0 20px;
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    .hero .hero__info span {
+        display: inline;
+    }
+
+    .hero .hero__info p {
+        font-size: 16px;
+        margin: 15px 20px 0;
+        line-height: 150%;
+        text-align: center;
+    }
+
+    .hero .hero__info .learn-more {
+        margin-top: 25px;
+        align-self: center;
+    }
+
+    .hero .hero__info .client {
+        display: flex;
+        width: 100%;
+    }
+
+    .hero .hero__info .client img {
+        margin: 45px 0 20px 20px;
+        width: 20%;
+    }
+
+    .features-nav {
+        background-color: transparent;
+        border: none;
+        position: static;
+        opacity: 0;
+    }
+
+    .company-nav {
+        background-color: transparent;
+        border: none;
+        top: 20%;
+        right: 0%;
+    }
+
+    .visible {
+        opacity: 1;
+    }
 }

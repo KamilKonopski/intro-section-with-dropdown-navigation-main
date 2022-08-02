@@ -20,10 +20,13 @@
 	</head>
 	<body>
 		<nav class="navigation">
+			<div class="logo">
+				<img src="./images/logo.svg" alt="" />
+			</div>
+			<div class="mobile-nav">
+				<img src="./images/icon-menu.svg" alt="" />
+			</div>
 			<div class="nav">
-				<div class="logo">
-					<img src="./images/logo.svg" alt="" />
-				</div>
 				<button id="features">
 					Features <img src="./images/icon-arrow-down.svg" alt="" />
 				</button>
@@ -32,32 +35,33 @@
 				</button>
 				<button>Careers</button>
 				<button>About</button>
-			</div>
-			<div class="features-nav">
-				<p>
-					<img src="./images/icon-todo.svg" alt="" /> <span>Todo List</span>
-				</p>
-				<p>
-					<img src="./images/icon-calendar.svg" alt="" />
-					<span>Calendar</span>
-				</p>
-				<p>
-					<img src="./images/icon-reminders.svg" alt="" />
-					<span>Reminders</span>
-				</p>
-				<p>
-					<img src="./images/icon-planning.svg" alt="" />
-					<span>Planning</span>
-				</p>
-			</div>
-			<div class="company-nav">
-				<p>History</p>
-				<p>Our Team</p>
-				<p>Blog</p>
-			</div>
-			<div class="authentication">
-				<button id="login">Login</button>
-				<button id="register">Register</button>
+
+				<div class="features-nav">
+					<p>
+						<img src="./images/icon-todo.svg" alt="" /> <span>Todo List</span>
+					</p>
+					<p>
+						<img src="./images/icon-calendar.svg" alt="" />
+						<span>Calendar</span>
+					</p>
+					<p>
+						<img src="./images/icon-reminders.svg" alt="" />
+						<span>Reminders</span>
+					</p>
+					<p>
+						<img src="./images/icon-planning.svg" alt="" />
+						<span>Planning</span>
+					</p>
+				</div>
+				<div class="company-nav">
+					<p>History</p>
+					<p>Our Team</p>
+					<p>Blog</p>
+				</div>
+				<div class="authentication">
+					<button id="login">Login</button>
+					<button id="register">Register</button>
+				</div>
 			</div>
 		</nav>
 		<header class="hero">
@@ -76,7 +80,8 @@
 				</div>
 			</div>
 			<div class="hero__image">
-				<img src="./images/image-hero-desktop.png" alt="" />
+				<img id="img-desktop" src="./images/image-hero-desktop.png" alt="" />
+				<img id="img-mobile" src="./images/image-hero-mobile.png" alt="" />
 			</div>
 		</header>
 
