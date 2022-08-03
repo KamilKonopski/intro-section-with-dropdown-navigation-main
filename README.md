@@ -75,7 +75,6 @@ Example resource 2 - This is an amazing article which helped me finally understa
 Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.
 
 Author
-Website - https://konopski-tsi.pl/
+Website - konopski-tsi.pl
 Frontend Mentor - @KamilKonopski
-Twitter - @MaerS__
-Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.
+Twitter - @maers__
