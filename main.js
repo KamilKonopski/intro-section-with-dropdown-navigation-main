@@ -9,7 +9,7 @@ const nav = document.querySelector('.nav');
 const mobileMenu = document.querySelector('.mobile-nav');
 const mobileMenuImg = document.querySelector('.mobile-nav img')
 
-mobileMenu.addEventListener('click', () => {
+mobileMenu.addEventListener('click', function() {
     nav.classList.toggle('menu');
 
     if(nav.classList.contains('menu')) {
@@ -26,7 +26,7 @@ mobileMenu.addEventListener('click', () => {
     };
 });
 
-features.addEventListener('click', () => {
+features.addEventListener('click', function() {
     featuresNav.classList.toggle('visible');
     
     if(featuresNav.classList.contains("visible")) {
@@ -36,7 +36,7 @@ features.addEventListener('click', () => {
     };
 });
 
-company.addEventListener('click', () => {
+company.addEventListener('click', function() {
     companyNav.classList.toggle('visible');
 
     if(companyNav.classList.contains("visible")) {
